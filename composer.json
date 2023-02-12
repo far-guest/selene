@@ -1,0 +1,29 @@
+{
+    "name": "far-guest/Selene",
+    "description": "laravel Selene admin panel",
+    "authors": [
+        {
+            "name": "farguest",
+            "email": "fardin.abdali@hotmail.ch"
+        }
+    ],
+    "require": {
+        "tightenco/ziggy": "^0.9",
+        "symfony/class-loader": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Selene\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Selene\\SeleneServiceProvider"
+            ],
+            "aliases": {
+                "Selene": "Selene\\Facades\\Selene"
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import "IranSans";
+@import "loading";
+@import "../../../node_modules/font-awesome/css/font-awesome.css";
+@import "~bootstrap-v4-rtl/scss/bootstrap-rtl";
+@import "sidebar";
+
+.rtl {
+  direction: rtl;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: IRANSans, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-size: .875rem;
+  background-color: #f8f9fa;
+  padding-right: 0 !important;
+}
+
+.link-unstyled {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-lg {
+  font-size: 22px;
+}
+
+.swal2-container {
+  z-index: 2001 !important;
+}
+
+.text-lg {
+  font-size: 22px;
+}
+
+.btn {
+  border-radius: 0.4rem;
+}
+
+input.form-control {
+  border-radius: 0.6rem;
+}
+
+.input-ltr {
+  input {
+    direction: ltr;
+  }
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+[dir=rtl] .rdropdown-menu-right, .rtl .rdropdown-menu-right {
+  right: auto !important;
+  left: 0 !important;
+}
