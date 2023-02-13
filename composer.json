@@ -25,5 +25,6 @@
                 "Selene": "Selene\\Facades\\Selene"
             }
         }
-    }
+    },
+     "minimum-stability": "dev"
 }
