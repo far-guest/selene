@@ -10,7 +10,8 @@ use Selene\Middleware\AccessResource;
 use Selene\Middleware\AccessView;
 use Selene\Middleware\BootSelene;
 use Illuminate\Support\ServiceProvider;
-use Symfony\Component\ClassLoader\ClassMapGenerator;
+use Composer\ClassMapGenerator\ClassMapGenerator;
+//use Symfony\Component\ClassLoader\ClassMapGenerator;
 
 class SeleneServiceProvider extends ServiceProvider
 {

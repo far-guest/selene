@@ -7,9 +7,13 @@ use Selene\Exceptions\NotRegistrableException;
 use Selene\Exceptions\NotRegisteredException;
 use Selene\Resources\Resource;
 use Selene\Tools\Tool;
-use Illuminate\Foundation\Application;
+//IdoIt
+//use Illuminate\Foundation\Application;
 use Selene\Views\View;
-use Symfony\Component\ClassLoader\ClassMapGenerator;
+//IdoIt
+//use Symfony\Component\ClassLoader\ClassMapGenerator;
+//IdoIt
+use Composer\ClassMapGenerator\ClassMapGenerator;
 
 class Selene
 {
