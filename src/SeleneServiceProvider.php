@@ -19,6 +19,7 @@ class SeleneServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
+            
             __DIR__ . '/Config/config.php' => config_path('selene.php'),
             __DIR__ . '/Selene' => app_path('Selene'),
             __DIR__ . '/Assets/view' => resource_path('views/selene'),
