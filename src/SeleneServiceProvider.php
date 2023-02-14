@@ -24,10 +24,8 @@ class SeleneServiceProvider extends ServiceProvider
             __DIR__ . '/Selene' => app_path('Selene'),
             __DIR__ . '/Assets/view' => resource_path('views/selene'),
             __DIR__ . '/Assets/dist' => public_path('Selene'),
-            __DIR__ . '/Assets/lang' => app_path('Selene/lang'),
-           
-            
-        ]);
+            __DIR__ . '/Assets/lang' => app_path('Selene/lang')
+   ]);
 
         $this->registerRoutes();
     }
