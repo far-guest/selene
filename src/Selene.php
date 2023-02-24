@@ -28,6 +28,7 @@ class Selene
     public function __construct($app)
     {
         $this->app = $app;
+       
     }
 
     function setResources($resources)

@@ -47,10 +47,10 @@ class SeleneServiceProvider extends ServiceProvider
                 'logout'
             ],
         ]]);
-
+        dd(app());
         if (!$this->app->routesAreCached()) {
             $mids = config('selene.middleware', []);
-
+            
             $this->app['router']->group([
                 'as' => 'selene.',
                 'prefix' => config('selene.route_prefix', 'selene'),

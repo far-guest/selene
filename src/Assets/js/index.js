@@ -1,5 +1,5 @@
 window._ = require('lodash');
-window.Popper = require('popper.js').default;
+window.Popper = require('popper.js').default;//Popper.js is a JavaScript library used for positioning poppers 
 
 try {
     window.$ = window.jQuery = require('jquery');
@@ -8,10 +8,13 @@ try {
 } catch (e) {
 }
 
-window.axios = require('axios');
+window.axios = require('axios');//Axios is a popular Promise-based HTTP client for making asynchronous HTTP requests in JavaScript.
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-
+//The line window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'; 
+//sets a default header X-Requested-With to the string 'XMLHttpRequest'. 
+//This header is typically used to identify AJAX requests made from the client-side. By setting this header,
+// the server can differentiate between AJAX and regular HTTP requests and respond accordingly.
 window.onCsrfToken = function (token) {
     window.csrf = token;
     window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token;

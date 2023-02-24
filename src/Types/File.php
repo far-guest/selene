@@ -115,6 +115,7 @@ class File extends Type
 
     private function removeFile($path)
     {
+        if($path != null)
         \Storage::disk($this->disc)->delete($path);
     }
 
